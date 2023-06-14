@@ -16,12 +16,8 @@ alpaca_api = tradeapi.REST(
     os.getenv('ALPACA_API_BASE_URL')
 )
 
-# Configure KuCoin API authentication
-kucoin_api = kucoin.client.Client(
-    os.getenv('KUCOIN_API_KEY'),
-    os.getenv('KUCOIN_API_SECRET'),
-    os.getenv('KUCOIN_API_PASSPHRASE')
-)
+
+
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
