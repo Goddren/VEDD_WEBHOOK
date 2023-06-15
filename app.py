@@ -1,7 +1,7 @@
 from flask import Flask, request
 import os
 import alpaca_trade_api as tradeapi
-import kucoin.client
+
 
 app = Flask(__name__)
 
